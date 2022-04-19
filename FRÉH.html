@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>FRÉH</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">TRANG CHỦ</a>
+    <a href="#" class="w3-bar-item w3-button">TẤT CẢ SẢN PHẨM</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      ÁO THUN <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Áo tay ngắn</a>
+      <a href="#" class="w3-bar-item w3-button">ÁO TAY DÀI</a>
+      <a href="#" class="w3-bar-item w3-button">ÁO POLO</a>
+      <a href="#" class="w3-bar-item w3-button">ÁO OVERSIZE</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">ÁO KHOÁC</a>
+    <a href="#" class="w3-bar-item w3-button">QUẦN</a>
+    <a href="#" class="w3-bar-item w3-button">GIÀY</a>
+    <a href="#" class="w3-bar-item w3-button">PHỤ KIỆN</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Thông tin liên lạc</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Thông tin sản phẩm</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Đăng kí nhận tin</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">ÁO TAY NGẮN</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="/img/cover.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topright w3-text-black" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">SẮP RA MẮT</h1>
+      <h1 class="w3-hide-large w3-hide-medium">SẮP RA MẮT</h1>
+      <h1 class="w3-hide-small">BỘ SƯU TẬP 2022</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">MUA NGAY</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://cdn.leninn.com/leninn/uploads/2021/08/18183638/mau-chinh-product-cho-web-2.jpg?morph=800" style="width:100%">
+        <p>
+          <a href="https://leninn.com/product/ss21-ellipses-stone-washed-tee?fbclid=IwAR1fspyu1jLsJoeQ1qfog18lS7ufCAcZuX_VIXpdH_Y-h2dQcpra2VnCVKo">
+            ELLIPSES STONE WASHED TEE</a><br><b>550.000₫</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://cdn.shopify.com/s/files/1/0087/6193/3920/products/1904762_WHIT_1_83f45a0a-cb87-4c58-8f98-40ec1c31b3b3_720x.jpg?v=1643044535" style="width:95%; height: 230px">
+        <p><a href="https://www.stussy.com/products/1904762-basic-stussy-tee-whit?variant=39428447993952">
+            BASIC STÜSSY TEE</a><br><b>1.131.700₫</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://cdn.shopify.com/s/files/1/0087/6193/3920/products/1904773_BLAC_2_2173c7e0-5bb4-4d42-b0ea-3ca8fd0eba69_720x.jpg?v=1643045614" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Best seller</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p><a href="https://www.stussy.com/products/1904773-statue-tee-blac?variant=39428458971232">
+          STATUE PIGMENT DYED TEE
+        </a><br><b>1.273.200₫</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://product.hstatic.net/1000201524/product/img_2537_b19645ea7e434049878a0ec4a29a9083_master.jpg" style="width:100%">
+        <p><a href="https://www.lider.vn/products/lider-ua-tee-ivory">
+          <br/>
+          ỦA TEE - IVORY</a><br><b>450,000₫</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://cdn.mootssy.com/wp-content/uploads/2022/01/Black-Logo-Tee-1.jpg" style="width:70%">
+        <p><a href="https://dimoirstudio.com/products/black-logo-tee">
+          BLACK LOGO TEE</a><br><b>420,000₫</b></p><br/>
+
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://product.hstatic.net/200000321981/product/204_3c1870b633e74b8e9e0729b4eaef11c0_master.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p><a href="https://aastu.vn/products/it-s-ok-but-tee"> 
+          <br/>  
+          " IT'S OK, BUT" TEE </a><br><b>380,000₫</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://product.hstatic.net/1000360022/product/1_94038351d74b4e04bf466646ecccb19d_master.jpg" style="width:100%">
+        <p><a href="https://icondenim.com/products/ao-thun-noisy-boy">
+          NOISYBOY TEE</a><br><b>280,000₫</b></p><br/>
+      </div>
+      <div class="w3-container">
+        <img src="https://static.dosi-in.com/images/detailed/79/dosiin-chodole-ao-thun-unisex-cottonin-hinh-dragonball-songoku-and-great-monkey-7977679776.jpg" style="width:90%">
+        <p><a href="https://dosi-in.com/ao-thun-unisex-cotton-100-in-hinh-dragonball-songoku-and-great-monkey/">
+          <br/>
+          DRAGONBALL - SONGOKU AND GREAT MONKEY<br><b>255,000₫</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>ĐĂNG KÍ NHẬN TIN</h1>
+    <p>Nhập địa chỉ email của bạn để nhận được ưu đãi mới nhất</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Nhập email của bạn" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">ĐĂNG KÍ</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>LIÊN LẠC</h4>
+        <p>Hãy liên lạc ngay với chúng tôi.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Họ và tên" name="Họ và tên" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Số điện thoại" name="Số điện thoại" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Nội dung" name="Nội dung" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">GỬI</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>CHÍNH SÁCH HỖ TRỢ</h4>
+        <p><a href="#">Tìm kiếm</a></p>
+        <p><a href="#">Chính sách đổi trả</a></p>
+        <p><a href="#">Chính sách bảo mật</a></p>
+        <p><a href="#">Điều khoản dịch vụ</a></p>
+        <p><a href="#">Trợ giúp</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>FRÉH</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i>Hẻm 69/68 Đ. Đặng Thuỳ Trâm, Phường 13, Bình Thạnh, Thành phố Hồ Chí Minh</p>
+        <p><i class="fa fa-fw fa-phone"></i> +84 363164506</p>
+        <p><i class="fa fa-fw fa-envelope"></i> fréh@gmail.com</p>
+        <h4>MẠNG XÃ HỘI</h4>
+        <p><i class="fa fa-facebook-official w3-hover-opacity w3-large"; ></i> <a href="https://www.facebook.com/truongdaihocvanlang"> Fanpage FRÉH</a></p>
+        <p><i class="fa fa-instagram w3-hover-opacity w3-large"></i> <a href="https://www.instagram.com/vanlanguniversity/">Instagram FRÉH</a></p>
+        <br>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
